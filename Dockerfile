@@ -56,11 +56,11 @@ ADD ssh_key_adder.rb /home/dev/ssh_key_adder.rb
 
 RUN \
 # Set up shell
-    homesick clone dpetersen/zshfiles &&\
+    homesick clone igorbarinov/zshfiles &&\
     homesick symlink zshfiles &&\
 
 # Set up The Editor of the Gods
-    homesick clone dpetersen/vimfiles &&\
+    homesick clone igorbarinov/vimfiles &&\
     homesick symlink vimfiles &&\
     cd ~/.vim/bundle_storage/vimproc.vim && make &&\
 
