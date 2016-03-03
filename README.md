@@ -1,7 +1,7 @@
 # dev-container-base
 
-[![Docker Hub](https://img.shields.io/badge/docker-ready-blue.svg)](https://registry.hub.docker.com/u/dpetersen/dev-container-base/)
-[![](https://badge.imagelayers.io/dpetersen/dev-container-base.svg)](https://imagelayers.io/?images=dpetersen/dev-container-base:latest 'Get your own badge on imagelayers.io')
+[![Docker Hub](https://img.shields.io/badge/docker-ready-blue.svg)](https://registry.hub.docker.com/u/igorbarinov/dev-container-base/)
+[![](https://badge.imagelayers.io/dpetersen/dev-container-base.svg)](https://imagelayers.io/?images=igorbarinov/dev-container-base:latest 'Get your own badge on imagelayers.io')
 
 A container with my basic dev tools running on Ubuntu. It does not have any languages or their specific tools installed. This could be used as a base image for developing in a specific language. Access is via SSH with the account `dev`, which has sudo.
 
@@ -12,7 +12,7 @@ The container exposes SSH and uses [GitHub's public key API](https://developer.g
 I start it like so:
 ```bash
 docker run -d \
-  -e AUTHORIZED_GH_USERS="dpetersen,otherperson" \
+  -e AUTHORIZED_GH_USERS="igorbarinov" \
   -p 0.0.0.0:31981:22 \
   dpetersen/dev-container-base:latest
 ```
@@ -62,7 +62,7 @@ docker build .
 #### Tagging
 
 ```bash
-docker tag <YOUR SHA HERE> dpetersen/dev-container-base:v1
+docker tag <YOUR SHA HERE> igorbarinov/dev-container-base:v1
 ```
 
 *Don't forget to tag `latest`! It's a manual process, not magic!*
@@ -70,5 +70,5 @@ docker tag <YOUR SHA HERE> dpetersen/dev-container-base:v1
 #### Pushing
 
 ```bash
-docker push dpetersen/dev-container-base
+docker push igorbarinov/dev-container-base
 ```
