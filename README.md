@@ -14,7 +14,7 @@ I start it like so:
 docker run -d \
   -e AUTHORIZED_GH_USERS="igorbarinov" \
   -p 0.0.0.0:31981:22 \
-  dpetersen/dev-container-base:latest
+  igorbarinov/dev-container-base:latest
 ```
 
 If the GitHub API is down or the user doesn't exist / has no keys, you'll get an error.
